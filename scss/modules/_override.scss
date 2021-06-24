@@ -1,0 +1,13 @@
+.btn {
+  border-radius: 0.5rem;
+}
+
+a.btn.btn-outline-dark {
+  color: $color-sub;
+  border-color: $color-sub;
+
+  &:hover {
+    color: $color-white;
+    background: $color-sub;
+  }
+}

@@ -1,0 +1,19 @@
+@keyframes anim-menu-item-before {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 110%;
+  }
+}
+
+@keyframes anim-menu-item-after {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 70%;
+  }
+}

@@ -1,0 +1,64 @@
+.header {
+  background-color: $color-white;
+  .navbar {
+    .navbar-brand img {
+      height: 65px;
+    }
+    .nav-item {
+      margin-right: 3rem;
+
+      a.nav-link {
+        color: $color-sub;
+        position: relative;
+      }
+
+      a.nav-link::before {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: 3px;
+      }
+
+      a.nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        display: block;
+        width: 0%;
+        height: 2px;
+        animation-name: imenuBefore;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+        transition: 0.5s;
+      }
+
+      a.nav-link.active::before,
+      a.nav-link.active::after {
+        background: $color-sub;
+      }
+
+      a.nav-link.active::before {
+        width: 110%;
+      }
+
+      a.nav-link.active::after {
+        width: 70%;
+      }
+
+      a.nav-link:hover::before,
+      a.nav-link:hover::after {
+        background: $color-main;
+      }
+
+      a.nav-link:hover::before {
+        animation: anim-menu-item-before 1s forwards alternate;
+      }
+
+      a.nav-link:hover::after {
+        animation: anim-menu-item-after 1s forwards alternate;
+      }
+    }
+  }
+}
