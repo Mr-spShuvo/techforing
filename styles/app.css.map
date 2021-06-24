@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "app.css",
+	"sources": [
+		"../scss/app.scss",
+		"../scss/modules/_variables.scss",
+		"../scss/modules/_base.scss"
+	],
+	"names": [],
+	"mappings": "AEAA,AAAA,IAAI,CAAC;CACH,gBAAgB,EDIP,OAAO;CCHhB,KAAK,EDAK,OAAO;CCCjB,WAAW,EAAE,0CAA0C;CACvD,WAAW,EAAE,GAAG;CACjB"
+}
