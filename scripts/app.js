@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 2,
     perMove: 1,
     autoplay: true,
+    interval: 2500,
     gap: '3rem',
     breakpoints: {
       990: {
@@ -14,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   new Splide('#pricing-slide', {
     type: 'loop',
+    autoplay: true,
+    interval: 5000,
     perPage: 4,
     perMove: 1,
     breakpoints: {
@@ -31,6 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   new Splide('#resources-slide', {
     type: 'loop',
+    autoplay: true,
+    interval: 4000,
     perPage: 3,
     perMove: 1,
     gap: '3rem',
