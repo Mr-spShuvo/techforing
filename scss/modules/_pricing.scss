@@ -12,8 +12,7 @@
   &__features {
     background: $color-light;
     position: absolute;
-    width: 20%;
-    max-width: 13rem;
+    width: 13rem;
     padding: 0;
     margin: 0;
     top: 10rem;
@@ -72,7 +71,13 @@
     }
   }
 
-  .splide__arrow {
-    display: none;
+  .splide__arrows {
+    right: 3.5rem;
+    left: initial;
+    transform: translateX(0);
+
+    @include media-queries(1200px) {
+      display: none;
+    }
   }
 }

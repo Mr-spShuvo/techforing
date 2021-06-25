@@ -1,8 +1,32 @@
 .header {
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 9999;
+  box-shadow: 3px 3px 15px rgba(#000000, 0.1);
+
   background-color: $color-white;
+
+  &__nav {
+    .navbar-toggler {
+      order: 2;
+    }
+
+    &:last-child {
+      order: 1;
+    }
+  }
   .navbar {
     .navbar-brand img {
-      height: 65px;
+      height: 2.5rem;
+
+      @include media-queries(atMedium) {
+        height: 3rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        height: 4rem;
+      }
     }
     .nav-item {
       margin-right: 3rem;
@@ -10,54 +34,100 @@
       a.nav-link {
         color: $color-sub;
         position: relative;
-      }
 
-      a.nav-link::before {
-        content: '';
-        display: block;
-        width: 0%;
-        height: 2px;
-        position: absolute;
-        bottom: 3px;
-      }
+        &::before {
+          content: '';
+          display: none;
+          width: 0%;
+          height: 2px;
+          position: absolute;
+          bottom: 3px;
 
-      a.nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        display: block;
-        width: 0%;
-        height: 2px;
-        animation-name: imenuBefore;
-        animation-duration: 0.5s;
-        animation-fill-mode: forwards;
-        transition: 0.5s;
-      }
+          @include media-queries(991px) {
+            display: block;
+          }
+        }
 
-      a.nav-link.active::before,
-      a.nav-link.active::after {
-        background: $color-sub;
-      }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          display: none;
+          width: 0%;
+          height: 2px;
 
-      a.nav-link.active::before {
-        width: 110%;
-      }
+          @include media-queries(991px) {
+            display: block;
+          }
+        }
 
-      a.nav-link.active::after {
-        width: 70%;
-      }
+        &.active::before,
+        &.active::after {
+          background: $color-sub;
+        }
 
-      a.nav-link:hover::before,
-      a.nav-link:hover::after {
-        background: $color-main;
-      }
+        &.active::before {
+          width: 110%;
+        }
 
-      a.nav-link:hover::before {
-        animation: anim-menu-item-before 1s forwards alternate;
-      }
+        &.active::after {
+          width: 70%;
+        }
 
-      a.nav-link:hover::after {
-        animation: anim-menu-item-after 1s forwards alternate;
+        &:hover::before,
+        &::after {
+          background: $color-main;
+        }
+
+        &:hover::before {
+          animation: anim-menu-item-before 1s forwards alternate;
+        }
+
+        &hover::after {
+          animation: anim-menu-item-after 1s forwards alternate;
+        }
+      }
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: $color-sub;
+    border: 2px solid $color-main;
+    border-radius: 50%;
+  }
+
+  .navbar-light .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-collapse {
+    animation: anim-menu 2s forwards;
+  }
+
+  .navbar-collapse.show {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    background: $color-white;
+    z-index: 11;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    ul {
+      margin: 0 !important;
+
+      li {
+        margin: 2rem;
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid $color-main;
       }
     }
   }

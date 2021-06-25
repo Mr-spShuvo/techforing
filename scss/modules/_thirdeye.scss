@@ -18,19 +18,29 @@
 
     .statisticsbox {
       &__meta {
-        h3 {
-          line-height: 1;
-
-          font-size: 3rem;
-          font-weight: 700;
-          font-family: $heading-font;
-          margin-bottom: 0.8rem;
-        }
-
         line-height: 1.3;
         font-weight: 500;
         font-size: 1.3rem;
-        max-width: 10rem;
+        width: 100%;
+
+        @include media-queries(atLarge) {
+          max-width: 10rem;
+        }
+
+        h3 {
+          line-height: 1;
+          font-size: 2rem;
+          font-weight: 700;
+          font-family: $heading-font;
+          margin-bottom: 0.8rem;
+
+          @include media-queries(atMedium) {
+            font-size: 2.5rem;
+          }
+          @include media-queries(atLarge) {
+            font-size: 3rem;
+          }
+        }
       }
     }
   }
@@ -40,10 +50,8 @@
   }
 
   &__features {
-    flex-basis: 50%;
-
     .featurebox {
-      flex-basis: 45%;
+      flex-basis: 100%;
       background-color: $color-light;
       border: $generic-border;
       border-radius: 0.5rem;
@@ -53,6 +61,10 @@
       align-items: center;
       padding: 1rem 3rem;
       box-shadow: $generic-shadow;
+
+      @include media-queries(atMediumLarge) {
+        flex-basis: 45%;
+      }
 
       h5 {
         font-size: 1.1rem;

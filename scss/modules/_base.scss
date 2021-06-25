@@ -1,3 +1,11 @@
+html {
+  font-size: 85%;
+
+  @include media-queries(atMedium) {
+    font-size: 100%;
+  }
+}
+
 body {
   color: $color-sub;
   font-family: $generic-font;

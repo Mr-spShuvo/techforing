@@ -2,12 +2,12 @@
   background: $color-sub;
   color: $color-white;
 
-  &__left {
-    flex-basis: 30%;
-  }
+  img {
+    width: 80%;
 
-  &__right {
-    flex-basis: 50%;
+    @include media-queries(768px) {
+      width: 100%;
+    }
   }
 
   .section__header {

@@ -17,3 +17,17 @@
     width: 70%;
   }
 }
+
+@keyframes anim-menu {
+  0% {
+    transform: translate(-10rem) scale(0);
+  }
+
+  50% {
+    transform: translate(-5rem) scale(1);
+  }
+
+  50% {
+    transform: translate(0) scale(1);
+  }
+}

@@ -37,6 +37,7 @@
             <a class="navbar-brand me-5" href="/">
               <img src="assets/images/logo.png" />
             </a>
+            <a class="btn btn-outline-dark d-block d-lg-none">Sign In/Sign Up</a>
             <button
               class="navbar-toggler"
               type="button"
@@ -68,9 +69,8 @@
                   <a class="nav-link" href="#">Resources</a>
                 </li>
               </ul>
-
-              <a class="btn btn-outline-dark">Sign In/Sign Up </a>
             </div>
+            <a class="btn btn-outline-dark d-none d-lg-block">Sign In/Sign Up</a>
           </div>
         </nav>
       </div>
@@ -81,7 +81,7 @@
       <img class="hero__img" src="assets/images/hero.jpg" alt="Hero Img" />
       <div class="hero__box">
         <h2 class="hero__title">techforing Vulnerability Scanner</h2>
-        <p class="hero__subtitle m-4">
+        <p class="hero__subtitle my-4">
           THIRDEYE is an online vulnerability scanner that finds cyber security weaknesses in your
           digital infrastructure before the hackers do. Discover common web application
           vulnerabilities and server configuration issues.
@@ -117,13 +117,30 @@
       </div>
       <div class="section__body clients py-5">
         <div class="container">
-          <img src="assets/images/clients/01-webrix-technology.png" alt="Webstrix" />
-          <img src="assets/images/clients/02-gurus-lepage.png" alt="Gurus" />
-          <img src="assets/images/clients/03-DCI-consultancy.png" alt="DCI Consultancy" />
-          <img src="assets/images/clients/04-active-adult-living.png" alt="Active Adult Living" />
-          <img src="assets/images/clients/05-ntuc-social-enterprise.png" alt="NTUC" />
-          <img src="assets/images/clients/06-dev-factory.png" alt="Dev Factory" />
-          <img src="assets/images/clients/07-sark.png" alt="Sark" />
+          <div class="row align-items-center mt-5 mt-xl-0 px-3 px-xl-0">
+            <div class="col-6 col-md-4 col-xl-2 mb-5 mb-xl-0">
+              <img src="assets/images/clients/01-webrix-technology.png" alt="Webstrix" />
+            </div>
+            <div class="col-6 col-md-4 col-xl-2 mb-5 mb-xl-0">
+              <img src="assets/images/clients/02-gurus-lepage.png" alt="Gurus" />
+            </div>
+            <div class="col-6 col-md-4 col-xl-2 mb-5 mb-xl-0">
+              <img src="assets/images/clients/03-DCI-consultancy.png" alt="DCI Consultancy" />
+            </div>
+            <div class="col-6 col-md-4 col-xl-2 mb-5 mb-xl-0">
+              <img
+                src="assets/images/clients/04-active-adult-living.png"
+                alt="Active Adult Living"
+              />
+            </div>
+            <div class="col-6 col-md-4 col-xl-2 mb-5 mb-xl-0">
+              <img src="assets/images/clients/05-ntuc-social-enterprise.png" alt="NTUC" />
+            </div>
+            <div class="col-6 col-md-4 col-xl-2 mb-5 mb-xl-0">
+              <img src="assets/images/clients/06-dev-factory.png" alt="Dev Factory" />
+            </div>
+          </div>
+          <!-- <img src="assets/images/clients/07-sark.png" alt="Sark" /> -->
         </div>
       </div>
     </section>
@@ -142,18 +159,26 @@
         <a class="btn btn-dark btn-lg">Full Scan</a>
       </div>
       <div class="section__body mt-5 fullscan">
-        <div class="container d-flex align-items-center justify-content-center">
-          <div class="fullscan__details">
-            <h3>Sample Report</h3>
-            <p>Here is a Website Vulnerability Scanner sample report:</p>
-            <ul class="fullscan__list">
-              <li>The report starts with a quick summary of the findings and risk ratings</li>
-              <li>Each finding has a detailed explanation in terms of risk and recommendations</li>
-              <li>The vulnerabilities are ordered by the risk level</li>
-            </ul>
-          </div>
-          <div class="fullscan__img">
-            <img class="img-fluid" src="assets/images/fullscan.png" alt="Full Scan" />
+        <div class="container">
+          <div class="row px-4 px-lg-0">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+              <div class="fullscan__details">
+                <h3>Sample Report</h3>
+                <p>Here is a Website Vulnerability Scanner sample report:</p>
+                <ul class="fullscan__list">
+                  <li>The report starts with a quick summary of the findings and risk ratings</li>
+                  <li>
+                    Each finding has a detailed explanation in terms of risk and recommendations
+                  </li>
+                  <li>The vulnerabilities are ordered by the risk level</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="fullscan__img">
+                <img class="img-fluid" src="assets/images/fullscan.png" alt="Full Scan" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -166,7 +191,7 @@
       </div>
       <div class="section__body mt-5 thirdeye">
         <div class="container">
-          <div class="row">
+          <div class="row px-4 px-md-0">
             <div class="col-md-6">
               <div class="thirdeyebox mb-4 d-flex">
                 <div class="thirdeyebox__icon me-4">
@@ -228,7 +253,7 @@
         </div>
         <div class="thirdeye__statistics py-5 mt-5">
           <div class="container">
-            <div class="row">
+            <div class="row px-2 px-sm-4 px-lg-0">
               <div class="col-6 mb-5 mb-lg-0 col-lg-3">
                 <div class="statisticsbox d-flex align-items-start">
                   <img
@@ -244,7 +269,14 @@
                 </div>
               </div>
               <div class="col-6 mb-5 mb-lg-0 col-lg-3">
-                <div class="statisticsbox d-flex align-items-start">
+                <div
+                  class="
+                    statisticsbox
+                    d-flex
+                    align-items-start
+                    justify-content-end justify-content-lg-start
+                  "
+                >
                   <img
                     class="statisticsbox__icon me-3"
                     src="assets/icons/customer.png"
@@ -272,7 +304,14 @@
                 </div>
               </div>
               <div class="col-6 mb-5 mb-lg-0 col-lg-3">
-                <div class="statisticsbox d-flex align-items-start">
+                <div
+                  class="
+                    statisticsbox
+                    d-flex
+                    align-items-start
+                    justify-content-end justify-content-lg-start
+                  "
+                >
                   <img
                     class="statisticsbox__icon me-3"
                     src="assets/icons/report.png"
@@ -290,38 +329,44 @@
         </div>
       </div>
       <div class="section section--sub">
-        <div class="container d-flex justify-content-between align-items-center mt-5">
-          <div class="thirdeye__mockup">
-            <img
-              class="img-fluid"
-              src="assets/images/desktop-mockup-dark.png"
-              alt="Features of third Eye"
-            />
-          </div>
-          <div class="section__header text-center thirdeye__features">
-            <h2 class="section__title">Features of Thirdeye</h2>
-            <h4 class="section__subtitle">Facilities you will get using this scanner</h4>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-xl-5 order-1 order-xl-0">
+              <div class="thirdeye__mockup ms-5 ps-5">
+                <img
+                  class="img-fluid"
+                  src="assets/images/desktop-mockup-dark.png"
+                  alt="Features of third Eye"
+                />
+              </div>
+            </div>
+            <div class="col-xl-7 order-0">
+              <div class="section__header text-center thirdeye__features">
+                <h2 class="section__title">Features of Thirdeye</h2>
+                <h4 class="section__subtitle">Facilities you will get using this scanner</h4>
 
-            <div class="d-flex flex-wrap justify-content-center mt-4">
-              <div class="featurebox m-3">
-                <img src="assets/icons/scan.png" alt="Icon" />
-                <h5>Automate your Scan</h5>
-              </div>
-              <div class="featurebox m-3">
-                <img src="assets/icons/add-user.png" alt="Icon" />
-                <h5>Invite your other organization users</h5>
-              </div>
-              <div class="featurebox m-3">
-                <img src="assets/icons/team.png" alt="Icon" />
-                <h5>Work together with programmer and Developer</h5>
-              </div>
-              <div class="featurebox m-3">
-                <img src="assets/icons/report-sm.png" alt="Icon" />
-                <h5>Generate automated report</h5>
-              </div>
-              <div class="featurebox m-3">
-                <img src="assets/icons/vulnerability.png" alt="Icon" />
-                <h5>Find the most common vulnerabilities</h5>
+                <div class="d-flex flex-wrap justify-content-center mt-4">
+                  <div class="featurebox m-3">
+                    <img src="assets/icons/scan.png" alt="Icon" />
+                    <h5>Automate your Scan</h5>
+                  </div>
+                  <div class="featurebox m-3">
+                    <img src="assets/icons/add-user.png" alt="Icon" />
+                    <h5>Invite your other organization users</h5>
+                  </div>
+                  <div class="featurebox m-3">
+                    <img src="assets/icons/team.png" alt="Icon" />
+                    <h5>Work together with programmer and Developer</h5>
+                  </div>
+                  <div class="featurebox m-3">
+                    <img src="assets/icons/report-sm.png" alt="Icon" />
+                    <h5>Generate automated report</h5>
+                  </div>
+                  <div class="featurebox m-3">
+                    <img src="assets/icons/vulnerability.png" alt="Icon" />
+                    <h5>Find the most common vulnerabilities</h5>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -412,7 +457,7 @@
         <h2 class="section__title mb-5">Our Pricing</h2>
       </div>
 
-      <div class="pricing container">
+      <div class="pricing container mb-5 pb-3">
         <ul class="pricing__features">
           <li>Sensitive File Checker</li>
           <li>PHP Info Checker</li>
@@ -528,19 +573,17 @@
     </section>
 
     <!-- Call to Action Section -->
-    <section class="section call2action">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="call2action__left">
-          <img
-            src="assets/images/desktop-mockup-white.png"
-            alt="Call to Action"
-            class="img-fluid"
-          />
-        </div>
-        <div class="call2action__right">
-          <div class="section__header text-center">
-            <h2 class="section__title mb-5">Ready to get started with your 30-Day Free trial?</h2>
-            <a class="btn btn-light btn-lg">Try for Free</a>
+    <section class="section call2action pt-0">
+      <div class="container py-5">
+        <div class="row py-3 px-4 px-md-0 justify-content-between align-items-center">
+          <div class="col-md-3 text-center text-md-left">
+            <img src="assets/images/desktop-mockup-white.png" alt="Call to Action" />
+          </div>
+          <div class="col-md-6 mt-5 mt-md-0">
+            <div class="section__header text-center">
+              <h2 class="section__title mb-5">Ready to get started with your 30-Day Free trial?</h2>
+              <a class="btn btn-light btn-lg">Try for Free</a>
+            </div>
           </div>
         </div>
       </div>
@@ -608,8 +651,8 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container d-flex flex-column py-5">
-        <div class="row">
-          <div class="col-md-6 col-lg-3 menu">
+        <div class="row d-none d-md-flex">
+          <div class="mb-5 mb-lg-0 col-md-6 col-lg-3 menu">
             <h3 class="menu__header">Company</h3>
             <ul class="menu__list">
               <li><a href="#">About Us</a></li>
@@ -622,7 +665,7 @@
               <li><a href="#">Find Us</a></li>
             </ul>
           </div>
-          <div class="col-md-6 col-lg-3 menu">
+          <div class="mb-5 mb-lg-0 col-md-6 col-lg-3 menu">
             <h3 class="menu__header">Popular Links</h3>
             <ul class="menu__list">
               <li><a href="#">Risk Assessment</a></li>
@@ -635,7 +678,7 @@
               <li><a href="#">hacker Recovery for Individual</a></li>
             </ul>
           </div>
-          <div class="col-md-6 col-lg-3 menu">
+          <div class="mb-5 mb-lg-0 col-md-6 col-lg-3 menu">
             <h3 class="menu__header">Resources</h3>
             <ul class="menu__list">
               <li><a href="#">Case Studies</a></li>
@@ -647,7 +690,7 @@
               <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
-          <div class="col-md-6 col-lg-3 menu">
+          <div class="mb-5 mb-lg-0 col-md-6 col-lg-3 menu">
             <h3 class="menu__header">Legal</h3>
             <ul class="menu__list">
               <li><a href="#">Privacy Policy</a></li>
@@ -656,7 +699,137 @@
             </ul>
           </div>
         </div>
-        <ul class="social-links d-flex ms-md-auto">
+
+        <div class="accordion accordion-flush d-block d-md-none order-1" id="footerMenu">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="true"
+                aria-controls="flush-collapseOne"
+              >
+                Company
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#footerMenu"
+            >
+              <div class="accordion-body">
+                <ul class="menu__list">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Leadership</a></li>
+                  <li><a href="#">Clients and their stories</a></li>
+                  <li><a href="#">Partnership Program</a></li>
+                  <li><a href="#">Franchise Program</a></li>
+                  <li><a href="#">Investor Relationship</a></li>
+                  <li><a href="#">Career</a></li>
+                  <li><a href="#">Find Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Popular Links
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#footerMenu"
+            >
+              <div class="accordion-body">
+                <ul class="menu__list">
+                  <li><a href="#">Risk Assessment</a></li>
+                  <li><a href="#">Business incident response</a></li>
+                  <li><a href="#">SMB Solution</a></li>
+                  <li><a href="#">Security Compliance</a></li>
+                  <li><a href="#">Concierge Cybersecurity</a></li>
+                  <li><a href="#">Cyber Investigation</a></li>
+                  <li><a href="#">Data Removal</a></li>
+                  <li><a href="#">hacker Recovery for Individual</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Resources
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#footerMenu"
+            >
+              <div class="accordion-body">
+                <ul class="menu__list">
+                  <li><a href="#">Case Studies</a></li>
+                  <li><a href="#">Report & Whitepapers</a></li>
+                  <li><a href="#">Industrywide Guide</a></li>
+                  <li><a href="#">Tutorials</a></li>
+                  <li><a href="#">Securitymania</a></li>
+                  <li><a href="#">Events and Webinars</a></li>
+                  <li><a href="#">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Legal
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingFour"
+              data-bs-parent="#footerMenu"
+            >
+              <div class="accordion-body">
+                <ul class="menu__list">
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms of Use</a></li>
+                  <li><a href="#">Trust Center</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="social-links order-0 pt-3 pb-5 pb-md-0 d-flex m-auto m-md-0 ms-md-auto">
           <li>
             <a href="#"><img src="assets/icons/facebook.png" alt="Facebook" /></a>
           </li>
@@ -672,8 +845,8 @@
         </ul>
       </div>
       <div class="footer__bottom">
-        <div class="container d-flex justify-content-between py-4">
-          <p class="signup">
+        <div class="container d-flex justify-content-center justify-content-md-between py-4">
+          <p class="signup d-none d-md-block">
             Create an account of login
             <a href="#" class="btn btn-dark btn-pill ms-3"
               ><img src="assets/icons/right-arrow-long.png"

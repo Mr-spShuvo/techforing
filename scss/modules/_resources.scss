@@ -1,7 +1,14 @@
 .resources {
-  margin-bottom: 5rem;
+  margin-bottom: 7rem;
+
+  @include media-queries(990px) {
+    margin-bottom: 5rem;
+  }
+
   .splide__arrows {
-    display: none;
+    @include media-queries(990px) {
+      display: none;
+    }
   }
 
   .resource {

@@ -17,17 +17,24 @@
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      width: 7rem;
+      width: 5rem;
       height: 5px;
-
       background-color: $color-sub;
+
+      @include media-queries(atMediumLarge) {
+        width: 7rem;
+      }
     }
   }
 
   &__title {
-    font-size: 2rem;
+    font-size: 1.65rem;
     font-weight: 500;
     text-transform: uppercase;
+
+    @include media-queries(atMediumLarge) {
+      font-size: 2rem;
+    }
   }
 
   &__subtitle {

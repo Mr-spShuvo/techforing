@@ -4,19 +4,40 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 2,
     perMove: 1,
     autoplay: true,
-    gap: '3rem'
+    gap: '3rem',
+    breakpoints: {
+      990: {
+        perPage: 1
+      }
+    }
   }).mount();
 
   new Splide('#pricing-slide', {
     type: 'loop',
     perPage: 4,
-    perMove: 1
+    perMove: 1,
+    breakpoints: {
+      780: {
+        perPage: 1
+      },
+      1020: {
+        perPage: 2
+      },
+      1200: {
+        perPage: 3
+      }
+    }
   }).mount();
 
   new Splide('#resources-slide', {
     type: 'loop',
     perPage: 3,
     perMove: 1,
-    gap: '3rem'
+    gap: '3rem',
+    breakpoints: {
+      990: {
+        perPage: 1
+      }
+    }
   }).mount();
 });
