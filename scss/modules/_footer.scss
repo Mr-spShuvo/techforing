@@ -1,0 +1,51 @@
+.footer {
+  background: $color-sub;
+  color: $color-white;
+  text-transform: uppercase;
+
+  .menu {
+    &__header {
+      font-size: 1.5rem;
+      border-bottom: 3px solid $color-white;
+      padding-bottom: 0.8rem;
+      margin-bottom: 1.75rem;
+    }
+
+    &__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          color: $color-white;
+          text-decoration: none;
+          font-weight: 500;
+
+          &:hover {
+            color: $color-main;
+          }
+        }
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .social-links {
+    list-style: none;
+    gap: 1.5rem;
+  }
+  &__bottom {
+    color: $color-sub;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: none;
+    background-color: $color-white;
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

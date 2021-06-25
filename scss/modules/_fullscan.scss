@@ -1,0 +1,37 @@
+.fullscan {
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__details {
+    flex-basis: 42%;
+    margin-right: 2rem;
+    h3 {
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    li {
+      font-size: 1.2rem;
+      position: relative;
+      margin-bottom: 1rem;
+
+      &::before {
+        @include list-style;
+      }
+    }
+  }
+
+  &__img {
+    flex-basis: 50%;
+  }
+}

@@ -1,0 +1,21 @@
+@mixin top-border {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 4rem;
+  position: absolute;
+  top: -0.5rem;
+  background-color: $color-main;
+}
+
+@mixin list-style {
+  content: '';
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  background: $color-sub;
+  border-radius: 50%;
+  position: absolute;
+  left: -2rem;
+  top: 0.5rem;
+}

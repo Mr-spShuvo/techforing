@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <title>TechForing | Cyber Security Consulting Company</title>
 
     <!-- MyriadPro Fonts -->
@@ -20,6 +20,11 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
     />
     <!-- Tech Foring Styles -->
     <link rel="stylesheet" href="styles/app.css" />
@@ -70,9 +75,607 @@
         </nav>
       </div>
     </header>
+
+    <!-- Hero Section -->
     <div class="hero">
-      <img src="assets/images/hero.jpg" alt="Hero Img" />
+      <img class="hero__img" src="assets/images/hero.jpg" alt="Hero Img" />
+      <div class="hero__box">
+        <h2 class="hero__title">techforing Vulnerability Scanner</h2>
+        <p class="hero__subtitle m-4">
+          THIRDEYE is an online vulnerability scanner that finds cyber security weaknesses in your
+          digital infrastructure before the hackers do. Discover common web application
+          vulnerabilities and server configuration issues.
+        </p>
+        <form class="hero__form">
+          <div class="mb-4">
+            <label for="website" class="form-label">Website</label>
+            <input
+              type="email"
+              class="form-control"
+              id="website"
+              placeholder="https://www.example.com"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="password"
+              class="form-control"
+              id="email"
+              placeholder="Your Email Address"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Free Scan</button>
+        </form>
+      </div>
     </div>
+
+    <!-- Clients Sections -->
+    <section class="section">
+      <div class="section__header">
+        <h2 class="section__title">Trusted by IT & Telecom Companies Like</h2>
+      </div>
+      <div class="section__body clients py-5">
+        <div class="container">
+          <img src="assets/images/clients/01-webrix-technology.png" alt="Webstrix" />
+          <img src="assets/images/clients/02-gurus-lepage.png" alt="Gurus" />
+          <img src="assets/images/clients/03-DCI-consultancy.png" alt="DCI Consultancy" />
+          <img src="assets/images/clients/04-active-adult-living.png" alt="Active Adult Living" />
+          <img src="assets/images/clients/05-ntuc-social-enterprise.png" alt="NTUC" />
+          <img src="assets/images/clients/06-dev-factory.png" alt="Dev Factory" />
+          <img src="assets/images/clients/07-sark.png" alt="Sark" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Scan Section -->
+    <section class="section">
+      <div class="section__header text-center">
+        <h2 class="section__title">Want a full scan?</h2>
+        <p class="my-4">
+          Website Vulnerability Free scan performs a passive web security scan in order to detect
+          issues like: outdated server software, insecure HTTP headers, insecure cookie settings and
+          a few others. We recommend doing a Full Scan for a comprehensive website assessment which
+          includes detection of SQL Injection, XSS, Local File Inclusion, OS Command Injection and
+          more.
+        </p>
+        <a class="btn btn-dark btn-lg">Full Scan</a>
+      </div>
+      <div class="section__body mt-5 fullscan">
+        <div class="container d-flex align-items-center justify-content-center">
+          <div class="fullscan__details">
+            <h3>Sample Report</h3>
+            <p>Here is a Website Vulnerability Scanner sample report:</p>
+            <ul class="fullscan__list">
+              <li>The report starts with a quick summary of the findings and risk ratings</li>
+              <li>Each finding has a detailed explanation in terms of risk and recommendations</li>
+              <li>The vulnerabilities are ordered by the risk level</li>
+            </ul>
+          </div>
+          <div class="fullscan__img">
+            <img class="img-fluid" src="assets/images/fullscan.png" alt="Full Scan" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Third Eye Section -->
+    <section class="section">
+      <div class="section__header text-center">
+        <h2 class="section__title">What Thirdeye looks for on your site</h2>
+      </div>
+      <div class="section__body mt-5 thirdeye">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="thirdeyebox mb-4 d-flex">
+                <div class="thirdeyebox__icon me-4">
+                  <img src="assets/icons/clipboard.png" alt="Icon" />
+                </div>
+                <div class="thirdeyebox__details">
+                  <h3>Self-Security Assessment</h3>
+                  <p>
+                    You can perform a self-security assessment in order to detect weaknesses in your
+                    own application. This will allow you to fix the vulnerabilities before being hit
+                    by real attackers.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thirdeyebox mb-4 d-flex ms-md-auto">
+                <div class="thirdeyebox__icon me-4">
+                  <img src="assets/icons/vulnerability-management.png" alt="Icon" />
+                </div>
+                <div class="thirdeyebox__details">
+                  <h3>Ongoing Vulnerability Management</h3>
+                  <p>
+                    Schedule scans for weekly or monthly reports. Configure report to alert on
+                    changes to vulnerability count.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thirdeyebox mb-4 d-flex">
+                <div class="thirdeyebox__icon me-4">
+                  <img src="assets/icons/clipboard.png" alt="Icon" />
+                </div>
+                <div class="thirdeyebox__details">
+                  <h3>Comprehensive Vulnerability Discovery</h3>
+                  <p>
+                    Detect a wide range of network service and web application vulnerabilities
+                    across any Internet facing system.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="thirdeyebox mb-4 d-flex ms-md-auto">
+                <div class="thirdeyebox__icon me-4">
+                  <img src="assets/icons/clipboard.png" alt="Icon" />
+                </div>
+                <div class="thirdeyebox__details">
+                  <h3>Real Time Risk Visibility</h3>
+                  <p>
+                    Detailed reports that include vulnerability severity with technical details of
+                    immediate value to the user.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thirdeye__statistics py-5 mt-5">
+          <div class="container d-flex justify-content-between align-items-center">
+            <div class="statisticsbox d-flex align-items-start">
+              <img
+                class="statisticsbox__icon me-3"
+                src="assets/icons/check-mark.png"
+                alt=""
+                srcset=""
+              />
+              <div class="statisticsbox__meta">
+                <h3 class="statisticsbox__number">100%</h3>
+                Guaranteed
+              </div>
+            </div>
+            <div class="statisticsbox d-flex align-items-start">
+              <img
+                class="statisticsbox__icon me-3"
+                src="assets/icons/customer.png"
+                alt=""
+                srcset=""
+              />
+              <div class="statisticsbox__meta">
+                <h3 class="statisticsbox__number">770k+</h3>
+                Satisfied Client
+              </div>
+            </div>
+            <div class="statisticsbox d-flex align-items-start">
+              <img class="statisticsbox__icon me-3" src="assets/icons/zoom.png" alt="" srcset="" />
+              <div class="statisticsbox__meta">
+                <h3 class="statisticsbox__number">500</h3>
+                Sites Scanned Daily
+              </div>
+            </div>
+            <div class="statisticsbox d-flex align-items-start">
+              <img
+                class="statisticsbox__icon me-3"
+                src="assets/icons/report.png"
+                alt=""
+                srcset=""
+              />
+              <div class="statisticsbox__meta">
+                <h3 class="statisticsbox__number">100%</h3>
+                Authenticate Report Generate
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section section--sub">
+        <div class="container d-flex justify-content-between align-items-center mt-5">
+          <div class="thirdeye__mockup">
+            <img
+              class="img-fluid"
+              src="assets/images/desktop-mockup-dark.png"
+              alt="Features of third Eye"
+            />
+          </div>
+          <div class="section__header text-center thirdeye__features">
+            <h2 class="section__title">Features of Thirdeye</h2>
+            <h4 class="section__subtitle">Facilities you will get using this scanner</h4>
+
+            <div class="d-flex flex-wrap justify-content-center mt-4">
+              <div class="featurebox m-3">
+                <img src="assets/icons/scan.png" alt="Icon" />
+                <h5>Automate your Scan</h5>
+              </div>
+              <div class="featurebox m-3">
+                <img src="assets/icons/add-user.png" alt="Icon" />
+                <h5>Invite your other organization users</h5>
+              </div>
+              <div class="featurebox m-3">
+                <img src="assets/icons/team.png" alt="Icon" />
+                <h5>Work together with programmer and Developer</h5>
+              </div>
+              <div class="featurebox m-3">
+                <img src="assets/icons/report-sm.png" alt="Icon" />
+                <h5>Generate automated report</h5>
+              </div>
+              <div class="featurebox m-3">
+                <img src="assets/icons/vulnerability.png" alt="Icon" />
+                <h5>Find the most common vulnerabilities</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="section testimonials">
+      <div class="section__header text-center">
+        <h2 class="section__title mb-5">What our customers say</h2>
+      </div>
+      <div class="container">
+        <div class="splide" id="testimonials-slide">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--next">
+              <img src="assets/icons/right-arrow.png" alt="icon" />
+            </button>
+            <button class="splide__arrow splide__arrow--prev">
+              <img src="assets/icons/left-arrow.png" alt="icon" />
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="testimonial">
+                  <div class="testimonial__quotes">
+                    <img src="assets/icons/left-quotes-sign.png" alt="icon" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur
+                      delectus eaque voluptatibus, doloremque placeat blanditiis vitae, pariatur
+                      unde aut error cumque omnis laboriosam incidunt cupiditate rerum officiis.
+                      Eius, accusantium.
+                    </p>
+                  </div>
+                  <div class="testimonial__author text-center">
+                    <img src="assets/images/author-00.jpg" alt="Author" />
+                    <h3>Jane Doe, CTO</h3>
+                    <h5>Ometria</h5>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial">
+                  <div class="testimonial__quotes">
+                    <img src="assets/icons/left-quotes-sign.png" alt="icon" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur
+                      delectus eaque voluptatibus, doloremque placeat blanditiis vitae, pariatur
+                      unde aut error cumque omnis laboriosam incidunt cupiditate rerum officiis.
+                      Eius, accusantium.
+                    </p>
+                  </div>
+                  <div class="testimonial__author text-center">
+                    <img src="assets/images/author-01.jpg" alt="Author" />
+                    <h3>Ahmad Jaber, Engineer</h3>
+                    <h5>Amber IT, Dhaka</h5>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial">
+                  <div class="testimonial__quotes">
+                    <img src="assets/icons/left-quotes-sign.png" alt="icon" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur
+                      delectus eaque voluptatibus, doloremque placeat blanditiis vitae, pariatur
+                      unde aut error cumque omnis laboriosam incidunt cupiditate rerum officiis.
+                      Eius, accusantium.
+                    </p>
+                  </div>
+                  <div class="testimonial__author text-center">
+                    <img src="assets/images/author-02.jpg" alt="Author" />
+                    <h3>Elisa Mandes, CEO</h3>
+                    <h5>New George Tech</h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section">
+      <div class="section__header text-center">
+        <h2 class="section__title mb-5">Our Pricing</h2>
+      </div>
+
+      <div class="pricing container">
+        <ul class="pricing__features">
+          <li>Sensitive File Checker</li>
+          <li>PHP Info Checker</li>
+          <li>Email Spoofing</li>
+          <li>Clickjacking</li>
+          <li>Open Redirect</li>
+          <li>XSS</li>
+          <li>SQL Injection</li>
+          <li>HTML Injection</li>
+          <li>Subdomain Takeover</li>
+        </ul>
+        <div class="pricing__slide">
+          <div class="splide" id="pricing-slide">
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--next">
+                <img src="assets/icons/right-arrow.png" alt="icon" />
+              </button>
+              <button class="splide__arrow splide__arrow--prev">
+                <img src="assets/icons/left-arrow.png" alt="icon" />
+              </button>
+            </div>
+            <div class="splide__track ms-5">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="pricebox">
+                    <div class="pricebox__header">
+                      <h3>Basic</h3>
+                      <p class="text-main">1 user</p>
+                      <h4>$49 /month</h4>
+                    </div>
+                    <ul class="pricebox__checker">
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li class="text-main">Free Trial</li>
+                      <li><a href="/" class="btn btn-dark">SIGN UP</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="pricebox">
+                    <div class="pricebox__header">
+                      <h3>Medium</h3>
+                      <p class="text-main">5 user</p>
+                      <h4>$199 /month</h4>
+                    </div>
+                    <ul class="pricebox__checker">
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li class="text-main">Free Trial</li>
+                      <li><a href="/" class="btn btn-dark">SIGN UP</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="pricebox">
+                    <div class="pricebox__header">
+                      <h3>Advanced</h3>
+                      <p class="text-main">20 user</p>
+                      <h4>$349 /month</h4>
+                    </div>
+                    <ul class="pricebox__checker">
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li><img src="assets/icons/tick.png" alt="icon" /></li>
+                      <li class="text-main">Free Trial</li>
+                      <li><a href="/" class="btn btn-dark">SIGN UP</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="pricebox pricebox--custom">
+                    <div class="pricebox__header">
+                      <h3>Custom</h3>
+                      <h4>ON DEMAND</h4>
+                    </div>
+                    <p class="mt-4">
+                      Go beyond scanning what you build and host with Get it All! Designed for large
+                      organizations, this scalable offering is made for easy and flexible roll-out
+                      and provides additional Enterprise support, including:
+                      <ul>
+                        <li>Specific Functionality</li>
+                        <li>Custom Scan Limits</li>
+                        <li>More Users</li>
+                      </ul>
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="section call2action">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="call2action__left">
+          <img
+            src="assets/images/desktop-mockup-white.png"
+            alt="Call to Action"
+            class="img-fluid"
+          />
+        </div>
+        <div class="call2action__right">
+          <div class="section__header text-center">
+            <h2 class="section__title mb-5">Ready to get started with your 30-Day Free trial?</h2>
+            <a class="btn btn-light btn-lg">Try for Free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="section resouces">
+      <div class="section__header text-center">
+        <h2 class="section__title mb-5">Resources</h2>
+      </div>
+      <div class="container">
+        <div class="splide" id="resources-slide">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--next">
+              <img src="assets/icons/right-arrow.png" alt="icon" />
+            </button>
+            <button class="splide__arrow splide__arrow--prev">
+              <img src="assets/icons/left-arrow.png" alt="icon" />
+            </button>
+          </div>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="resource">
+                  <h3 class="resource__header">Guides</h3>
+                  <div class="resource__post">
+                    <img src="assets/images/" alt="" srcset="">
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial">
+                  <div class="testimonial__quotes">
+                    <img src="assets/icons/left-quotes-sign.png" alt="icon" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur
+                      delectus eaque voluptatibus, doloremque placeat blanditiis vitae, pariatur
+                      unde aut error cumque omnis laboriosam incidunt cupiditate rerum officiis.
+                      Eius, accusantium.
+                    </p>
+                  </div>
+                  <div class="testimonial__author text-center">
+                    <img src="assets/images/author-01.jpg" alt="Author" />
+                    <h3>Ahmad Jaber, Engineer</h3>
+                    <h5>Amber IT, Dhaka</h5>
+                  </div>
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="testimonial">
+                  <div class="testimonial__quotes">
+                    <img src="assets/icons/left-quotes-sign.png" alt="icon" />
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, consequatur
+                      delectus eaque voluptatibus, doloremque placeat blanditiis vitae, pariatur
+                      unde aut error cumque omnis laboriosam incidunt cupiditate rerum officiis.
+                      Eius, accusantium.
+                    </p>
+                  </div>
+                  <div class="testimonial__author text-center">
+                    <img src="assets/images/author-02.jpg" alt="Author" />
+                    <h3>Elisa Mandes, CEO</h3>
+                    <h5>New George Tech</h5>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container d-flex flex-column py-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 menu">
+            <h3 class="menu__header">
+              Company
+            </h3>
+            <ul class="menu__list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Leadership</a></li>
+              <li><a href="#">Clients and their stories</a></li>
+              <li><a href="#">Partnership Program</a></li>
+              <li><a href="#">Franchise Program</a></li>
+              <li><a href="#">Investor Relationship</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Find Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 menu">
+            <h3 class="menu__header">
+              Popular Links
+            </h3>
+            <ul class="menu__list">
+              <li><a href="#">Risk Assessment</a></li>
+              <li><a href="#">Business incident response</a></li>
+              <li><a href="#">SMB Solution</a></li>
+              <li><a href="#">Security Compliance</a></li>
+              <li><a href="#">Concierge Cybersecurity</a></li>
+              <li><a href="#">Cyber Investigation</a></li>
+              <li><a href="#">Data Removal</a></li>
+              <li><a href="#">hacker Recovery for Individual</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 menu">
+            <h3 class="menu__header">
+              Resources
+            </h3>
+            <ul class="menu__list">
+              <li><a href="#">Case Studies</a></li>
+              <li><a href="#">Report & Whitepapers</a></li>
+              <li><a href="#">Industrywide Guide</a></li>
+              <li><a href="#">Tutorials</a></li>
+              <li><a href="#">Securitymania</a></li>
+              <li><a href="#">Events and Webinars</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3 menu">
+            <h3 class="menu__header">
+              Legal
+            </h3>
+            <ul class="menu__list">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Trust Center</a></li>
+            </ul>
+          </div>
+        </div>
+        <ul class="social-links d-flex ms-md-auto">
+          <li><a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a></li>
+          <li><a href="#"><img src="assets/icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a></li>
+        </ul>
+      </div>
+      <div class="footer__bottom">
+        <div class="container d-flex justify-content-between py-4">
+          <p class="signup">
+          Create an account of login <a href="#" class="btn btn-dark btn-pill ms-3"><img src="assets/icons/right-arrow-long.png"></a>
+        </p>
+        <p class="copyright">
+          &copy; Copyright 2021, <a href="#" class="text-main">Techforing Ltd.</a>
+        </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script
@@ -80,6 +683,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Splide Js -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <!-- TechForing JS -->
     <script src="scripts/app.js"></script>
   </body>

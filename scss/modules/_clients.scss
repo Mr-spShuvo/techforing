@@ -1,0 +1,8 @@
+.clients {
+  background-color: $color-light;
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

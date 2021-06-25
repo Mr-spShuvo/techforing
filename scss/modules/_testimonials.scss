@@ -1,0 +1,41 @@
+.testimonials {
+  margin-bottom: 2rem;
+  position: relative;
+
+  .testimonial {
+    padding-bottom: 9.5rem;
+    position: relative;
+    &__quotes {
+      background: $color-light;
+      padding: 3rem;
+      padding-bottom: 5rem;
+      border: 2px solid $color-bg;
+      box-shadow: $generic-shadow;
+      text-align: center;
+      line-height: 2;
+    }
+
+    &__author {
+      position: absolute;
+      left: 50%;
+      bottom: 0rem;
+      transform: translateX(-50%);
+      img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+      }
+
+      h3 {
+        margin-top: 1.5rem;
+        position: relative;
+        &::after {
+          @include top-border;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+}

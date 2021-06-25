@@ -1,11 +1,56 @@
 .hero {
-  width: 100vw;
+  width: 100%;
   height: 40.625rem;
+  position: relative;
 
-  img {
+  .hero__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+  }
+
+  .hero__box {
+    width: 100%;
+    max-width: 80rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $color-white;
+  }
+
+  .hero__title {
+    font-family: $heading-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    font-family: $heading-font;
+  }
+
+  .hero__form {
+    width: 100%;
+    max-width: 40rem;
+    margin: auto;
+    label {
+      position: absolute;
+      left: -9999px;
+    }
+    input.form-control {
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 0;
+
+      &:focus,
+      &:active {
+        box-shadow: none;
+      }
+    }
   }
 }
