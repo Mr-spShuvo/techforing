@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     perPage: 2,
     perMove: 1,
     autoplay: true,
-    interval: 2500,
+    interval: 3500,
     gap: '3rem',
     breakpoints: {
       990: {
