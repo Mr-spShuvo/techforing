@@ -117,7 +117,7 @@ body {
 }
 
 .section {
-	padding: 4rem 0;
+	padding-top: 4rem;
 }
 
 .section__header {
@@ -561,6 +561,45 @@ body {
 
 .call2action .btn {
 	text-transform: none;
+}
+
+.resources {
+	margin-bottom: 5rem;
+}
+
+.resources .splide__arrows {
+	display: none;
+}
+
+.resources .resource__header {
+	text-align: center;
+	margin-bottom: 2.5rem;
+	position: relative;
+}
+
+.resources .resource__header::after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 50%;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -1rem;
+	background-color: #182f59;
+}
+
+.resources .resource__post {
+	background: #f7f7fd;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+.resources .resource__post img {
+	width: 100%;
+	height: 15rem;
+	object-fit: cover;
+	object-position: center;
 }
 
 .footer {
