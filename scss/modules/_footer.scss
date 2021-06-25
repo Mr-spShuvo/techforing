@@ -36,6 +36,16 @@
   .social-links {
     list-style: none;
     gap: 1.5rem;
+    padding: 0;
+    img {
+      width: 2.8rem;
+      height: 2.8rem;
+
+      @include media-queries(atMediumLarge) {
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
   }
   &__bottom {
     color: $color-sub;
