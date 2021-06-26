@@ -1,8 +1,11 @@
 .clients {
   background-color: $color-light;
-  & > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  img {
+    width: 80%;
+
+    @include media-queries(atMediumLarge) {
+      width: 100%;
+    }
   }
 }

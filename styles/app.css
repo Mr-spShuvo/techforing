@@ -296,11 +296,17 @@ body {
 }
 
 .header .navbar-light .navbar-toggler {
-	width: 3.5rem;
-	height: 3.5rem;
+	padding: 0;
+	width: 3.2rem;
+	height: 3.2rem;
 	color: #182f59;
 	border: 2px solid #5bbc2e;
 	border-radius: 50%;
+}
+
+.header .navbar-toggler-icon {
+	width: 1.25em;
+	height: 1.25em;
 }
 
 .header .navbar-light .navbar-toggler:focus {
@@ -419,10 +425,14 @@ body {
 	background-color: #f7f7fd;
 }
 
-.clients > .container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.clients img {
+	width: 80%;
+}
+
+@media only screen and (min-width: 990px) {
+	.clients img {
+		width: 100%;
+	}
 }
 
 .fullscan > .container {

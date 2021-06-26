@@ -91,11 +91,17 @@
   }
 
   .navbar-light .navbar-toggler {
-    width: 3.5rem;
-    height: 3.5rem;
+    padding: 0;
+    width: 3.2rem;
+    height: 3.2rem;
     color: $color-sub;
     border: 2px solid $color-main;
     border-radius: 50%;
+  }
+
+  .navbar-toggler-icon {
+    width: 1.25em;
+    height: 1.25em;
   }
 
   .navbar-light .navbar-toggler:focus {
