@@ -2,10 +2,10 @@
   background-color: $color-light;
 
   img {
-    width: 80%;
+    width: 75%;
 
     @include media-queries(atMediumLarge) {
-      width: 100%;
+      width: 90%;
     }
   }
 }

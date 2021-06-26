@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "watch": "node-sass scss/ -o styles/ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass scss/ -o styles/"
+    "compile:css": "node-sass scss/ -o styles/ --output-style compressed"
   },
   "devDependencies": {
     "node-sass": "^6.0.0"
