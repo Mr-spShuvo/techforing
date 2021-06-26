@@ -1,4 +1,5 @@
 html {
+  scroll-behavior: smooth;
   font-size: 85%;
 
   @include media-queries(atMedium) {

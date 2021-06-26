@@ -83,7 +83,7 @@
           animation: anim-menu-item-before 1s forwards alternate;
         }
 
-        &hover::after {
+        &:hover::after {
           animation: anim-menu-item-after 1s forwards alternate;
         }
       }
